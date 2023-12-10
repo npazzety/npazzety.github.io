@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://kit.fontawesome.com/15dd73409a.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  <div style="margin-right: 200px;" class="pestaña-nelson">
+    <div><span style="margin-left: 40px;">NELSON</span></div>
+    <div>
+        <img style="width: 200px; margin-top: 30px;" src="../img/yo.png" >
+        <div style="font-weight: 900; font-size: 15px; margin-top: 50px; margin-left: 50px;">Telefono</div>
+        <div style="font-size: 10px; margin-left: 50px;">+504 3210-4541</div>
+    </div>
+
+
+  </div>
+
+  <nav class="contenedor">
+    <div class="pestanas">
+      <button onclick="mostrarSeccion('sobreMi')">Sobre Mí</button>
+      <button onclick="mostrarSeccion('proyectos')">Skills</button>
+      <button onclick="mostrarSeccion('contacto')">Contacto</button>
+    </nav>
+
+    <div class="seccion" id="sobreMi" style="color: white;">
+      <div style="background-color: #995dee9d ; padding: 8px;">
+        <div style="font-weight: 800; font-size: 50px;">¡HOLA!</div>
+        <div style="padding: 5px; font-size: 25px;">Soy estudiante y a la vez un programador, tengo conocimientos en sowftware, en diseño grafic, phothoshop. Mi vision y mision es aportar un poco mas al desarrollo web, innovar en soluciones de alta eficiencia</div>
+      </div>
+    </div>
+
+    <div class="seccion" id="proyectos">
+        <div style="font-weight: 700; font-size: 50px; margin-bottom: 50px; background-color: #995dee9d ; width: 125px; margin-left: 290px;">
+            skills
+        </div>
+      <div class="skills">
+        <div class="logos">
+            <div>CSS</div>
+            <div>
+                <img style="height: 80px;" src="..//img/css.webp">
+            </div>
+        </div>
+        <div class="logos">
+            <div>HTML</div>
+            <div>
+                <img style="height: 80px;" src="..//img/html.png">
+            </div>
+        </div>
+        <div class="logos">
+            <div>JS</div>
+            <div>
+                <img style="height: 80px;" src="..//img/js.png">
+            </div>
+        </div>
+        <div class="logos">
+            <div>Ilustrador</div>
+            <div>
+                <img style="height: 80px;" src="..//img/ilustrador.png">
+            </div>
+        </div>
+        <div class="logos">
+            <div>Photoshop</div>
+            <div>
+                <img style="height: 80px;" src="..//img/ps.png">
+            </div>
+        </div>
+        <div class="logos">
+            <div>NetBeans</div>
+            <div>
+                <img style="height: 80px;" src="..//img/nb.png">
+            </div>
+        </div>
+        <div class="logos">
+            <div>Eclipse</div>
+            <div>
+                <img style="height: 80px;" src="..//img/exclipse.png">
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="seccion" id="contacto">
+        <div style="background-color: #995dee9d; height: 65px; margin-bottom: 100px;">
+            <div style="font-size: 30px;">Puedes contactarme en mis siguientes redes sociales:</div>
+            <div style="margin-top: 50px;">
+                <div class="skills">
+                    <div class="logos">
+                        <div>facebook</div>
+                        <div id="contactos">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div>github</div>
+                        <div id="contactos">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div>instagram</div>
+                        <div id="contactos">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div>whatsapp</div>
+                        <div id="contactos">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div>twitter</div>
+                        <div id="contactos">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.seccion');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('active');
+      });
+
+      const seccionMostrar = document.getElementById(id);
+      seccionMostrar.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* Estilos para el fondo morado difuminado */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: radial-gradient(circle, #ffffff, #6a00ff);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+  }
+  
+  /* Estilos para la pestaña "NELSON" */
+  .pestaña-nelson {
+    margin-top: 150px;
+    color: #ffffff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    flex: display;
+    flex-direction: column;
+  }
+  
+  /* Estilos para los recuadros y pestañas */
+  .contenedor {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  /* Estilos para las pestañas */
+  .pestanas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .pestanas button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6a00ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pestanas button:hover {
+    background-color: #4d0099;
+  }
+  
+  /* Estilos para las secciones */
+  .seccion {
+    display: none;
+  }
+  
+  .seccion.active {
+    display: block;
+    flex: display;
+    justify-content: center;
+    width: 700px;
+  }
+  
+
+  .pestañas-info {
+    flex: display;
+    justify-content: center;
+  }
+
+  .skills {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    background-color:#995dee9d;
+}
+
+.logos {
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+    padding: 10px;
+}
+
+#contactos {
+    font-size: 50px;
+}
